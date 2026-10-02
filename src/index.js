@@ -8,14 +8,15 @@ import SaludoPadre from './components/SaludoPadre';
 import PadreMatematicas from './components/PadreMatematicas';
 import Contador from './components/Contador';
 import Coche from './ejercicio/components/Coche';
+import ContadorJSX from './ejercicio2/components/ContadorJSX';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <ContadorJSX />
+    {/* 
     <Coche marca='Audi' modelo='RS6' velMax='320' aceleracion='30' />
     <Coche marca='Mazda' modelo='3' velMax='240' aceleracion='15' />
-
-    {/* 
     <Contador/>
     <PadreMatematicas />
     <SaludoPadre />
