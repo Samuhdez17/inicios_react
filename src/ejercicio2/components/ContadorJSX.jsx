@@ -2,15 +2,24 @@ import { Component } from "react";
 
 class ContadorJSX extends Component {
     state = {
-        contador: '0'
+        contador: this.props.valInicial
     }
 
     incrementar = () => {
-        this.setState(this.state.contador, parseInt(this.state.contador) + 1)
+        /* EJEMPLO DE ARRAY
+        const array = [];
+        array.push(<h1>Hola</h1>);
+        */
+
+        this.setState({
+            contador: this.state.contador + 1
+        })
     }
 
     decrementar = () => {
-        this.setState(this.state.contador, parseInt(this.state.contador) - 1)
+        this.setState({
+            contador: this.state.contador - 1
+        })
     }
 
     render() {
@@ -18,7 +27,7 @@ class ContadorJSX extends Component {
             <div>
                 <h1>Contador JSX: { this.state.contador }</h1>
                 <button onClick={this.incrementar}>incrementar</button>
-                <button onClick={this.incrementar}>decrementar</button>
+                <button onClick={this.decrementar}>decrementar</button>
             </div>
         )
     }

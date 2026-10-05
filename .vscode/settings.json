@@ -1,0 +1,24 @@
+{
+    // Enable JavaScript suggestions
+    "javascript.suggest.enabled": true,
+    // Update imports when moving files
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    // Prefer non-relative imports when possible
+    "javascript.preferences.importModuleSpecifier": "non-relative",
+    // Use single quotes for JavaScript
+    "javascript.preferences.quoteStyle": "single",
+    // Enable quick suggestions in editor (for other, comments, strings)
+    "editor.quickSuggestions": {
+        "other": true,
+        "comments": false,
+        "strings": true
+    },
+    // Show suggestions on trigger characters
+    "editor.suggestOnTriggerCharacters": true,
+    // Accept suggestion on Enter key
+    "acceptSuggestionOnEnter": "on",
+    // Enable tab completion
+    "editor.tabCompletion": "on",
+    // Enable suggestions for React JSX
+    "javascript.jsx.enabled": true
+}

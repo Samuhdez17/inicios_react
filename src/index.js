@@ -9,12 +9,23 @@ import PadreMatematicas from './components/PadreMatematicas';
 import Contador from './components/Contador';
 import Coche from './ejercicio/components/Coche';
 import ContadorJSX from './ejercicio2/components/ContadorJSX';
+import DibujosComplejosArray from './ejercicio2/components/DibujosComplejosArray';
+import DibujosComplejosRender from './ejercicio2/components/DibujosComplejosRender';
+import PadreDeporte from './ejercicio2/components/PadreDeporte';
+import PadreNumeros from './ejercicio3/components/PadreNumeros';
+import Comimcs from './ejercicio3/components/Comics';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <ContadorJSX />
+    <Comimcs />
+    {/* <PadreNumeros /> */}
+    
     {/* 
+    <PadreDeporte />
+    <DibujosComplejosRender />
+    <DibujosComplejosArray />
+    <ContadorJSX valInicial = { 20 } />
     <Coche marca='Audi' modelo='RS6' velMax='320' aceleracion='30' />
     <Coche marca='Mazda' modelo='3' velMax='240' aceleracion='15' />
     <Contador/>
