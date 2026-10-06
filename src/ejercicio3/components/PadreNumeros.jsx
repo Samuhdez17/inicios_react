@@ -12,7 +12,7 @@ export default class PadreNumeros extends Component {
     }
 
     cargarNumeros = () => {
-        for (let i = 0 ; i < 4 ; i++) {
+        for (let i = 0 ; i < 1 ; i++) {
             this.state.numeros.push(parseInt(Math.random() * 500 + 1))
         }
 
@@ -22,6 +22,10 @@ export default class PadreNumeros extends Component {
     agregarNumero = () => {
         this.state.numeros.push(parseInt(Math.random() * 500 + 1))
         this.setState({ numeros: this.state.numeros })
+    }
+
+    componentDidMount() {
+        this.cargarNumeros()
     }
 
     render() {
